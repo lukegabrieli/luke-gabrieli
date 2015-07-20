@@ -21,12 +21,17 @@ main {
   }
 }
 
-.home_contact, .home_projects {
-  a {
+.home_contact {
+  @include black-button;
+}
+
+.home_projects {
+  > a {
     text-decoration: none;
     color: black;
-    padding: 1em;
-    border: .3em solid black;
+    padding: 1em 1.5em;
+    margin: 1em .2em;
+    border: .2em solid black;
     display: inline-block;
     vertical-align: middle;
     -webkit-transform: translateZ(0);
@@ -65,6 +70,36 @@ main {
   }
 }
 
+.home_projects_image {
+  img {
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+  }
+  figcaption {
+    font-size: 2em;
+    background: rgba(11,135,147,0.8);
+    color: white;
+    opacity: 0;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+  }
+  a:hover figcaption {
+    opacity: 1;
+  }
+  a:hover img {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+}
+
+.icon-newspaper, .icon-paint-format, .icon-keyboard {
+  font-size: 4em;
+  color: #0B8793;
+}
+
 //-----PROJECTS-----
 
 .projects_main {
@@ -80,8 +115,19 @@ main {
     }
     h2 {
       font-size: 1.1em;
+      text-align: left;
+    }
+    p {
+      text-align: left;
     }
     @include black-button;
+  }
+}
+
+.projects_text {
+  text-align: center;
+  a {
+
   }
 }
 
@@ -91,7 +137,6 @@ main {
   article {
     border-top: .2em solid $light-blue;
     h1 {
-      font-family: $quicksand;
       font-size: 1.8em;
     }
     p {
