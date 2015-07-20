@@ -1,0 +1,53 @@
+/*----------HERO----------*/
+
+.hero {
+  font-family: 'Montserrat';
+  color: white;
+
+  background-image: url(../images/hero2.jpg), linear-gradient(90deg, #360033 10%, #0b8793 90%);;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: scroll;
+  // background: -webkit-linear-gradient(90deg, #360033 10%, #0b8793 90%); /* Chrome 10+, Saf5.1+ */
+  // background:    -moz-linear-gradient(90deg, #360033 10%, #0b8793 90%); /* FF3.6+ */
+  // background:     -ms-linear-gradient(90deg, #360033 10%, #0b8793 90%); /* IE10 */
+  // background:      -o-linear-gradient(90deg, #360033 10%, #0b8793 90%); /* Opera 11.10+ */
+  // background:         linear-gradient(90deg, #360033 10%, #0b8793 90%); /* W3C */
+  background-blend-mode: multiply;
+  @media (min-width: 34.375em) {
+    background-attachment: fixed;
+  }
+  text-align: center;
+  padding: 10em 0;
+  @media (min-width: 34.375em) {
+    padding: 16em 0;
+  }
+  h1 {
+    font-size: 3em;
+    @media (min-width: 34.375em) {
+      font-size: 5em;
+    }
+  }
+  h2 {
+    font-family: 'Montserrat Light';
+    font-size: 2em;
+    @media (min-width: 34.375em) {
+      font-size: 2.9em;
+    }
+    margin-top: .3em;
+  }
+  @include white-button;
+  a {
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    @media (min-width: 34.375em) {
+      display: inline-block;
+      width: auto;
+      margin-left: .3em;
+      margin-right: .3em;
+    }
+  }
+}

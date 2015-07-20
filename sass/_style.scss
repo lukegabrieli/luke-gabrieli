@@ -1,0 +1,153 @@
+/*----------STYLE----------*/
+
+$quicksand: 'Quicksand', sans-serif;
+$light-blue: #309CBC;
+
+//-----HOME-----
+
+main {
+  // text-align: center;
+  h1 {
+    font-size: 2em;
+  }
+}
+
+.main_home {
+  text-align: center;
+  article {
+    &:nth-child(even){
+      background-color: rgba(11,135,147,.1);
+    }
+  }
+}
+
+.home_contact {
+  @include black-button;
+}
+
+.home_projects {
+  > a {
+    text-decoration: none;
+    color: black;
+    padding: 1em 1.5em;
+    margin: 1em .2em;
+    border: .2em solid black;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    overflow: hidden;
+    -webkit-transition: color .3s;
+    transition: color .3s;
+    &:before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      left: 50%;
+      right: 50%;
+      bottom: 0;
+      background: #2098d1;
+      height: 100%;
+      -webkit-transition-property: left, right;
+      transition-property: left, right;
+      -webkit-transition-duration: .3s;
+      transition-duration: .3s;
+      -webkit-transition-timing-function: ease-out;
+      transition-timing-function: ease-out;
+    }
+    &:hover {
+      color: white;
+    }
+  }
+  a:hover:before, a:focus:before, a:active:before {
+    left: 0;
+    right: 0;
+  }
+}
+
+.home_projects_image {
+  img {
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+  }
+  figcaption {
+    font-size: 2em;
+    background: rgba(11,135,147,0.8);
+    color: white;
+    opacity: 0;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s;
+  }
+  a:hover figcaption {
+    opacity: 1;
+  }
+  a:hover img {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+}
+
+.icon-newspaper, .icon-paint-format, .icon-keyboard {
+  font-size: 4em;
+  color: #0B8793;
+}
+
+//-----PROJECTS-----
+
+.projects_main {
+  h1 {
+    text-align: center;
+  }
+  .projects_article {
+    &:nth-child(odd) {
+      background-color: rgba(11,135,147,.1);
+    }
+    h1 {
+      font-size: 1.8em;
+    }
+    h2 {
+      font-size: 1.1em;
+      text-align: left;
+    }
+    p {
+      text-align: left;
+    }
+    @include black-button;
+  }
+}
+
+.projects_text {
+  text-align: center;
+  a {
+
+  }
+}
+
+//-----THOUGHTS-----
+
+.thoughts_main {
+  article {
+    border-top: .2em solid $light-blue;
+    h1 {
+      font-size: 1.8em;
+    }
+    p {
+      font-size: 1.1em;
+      line-height: 1.4;
+    }
+  }
+  .first {
+    border-top: none;
+  }
+  .blog_time {
+    font-size: .9em;
+  }
+}

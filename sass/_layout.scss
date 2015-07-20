@@ -1,0 +1,163 @@
+/*----------LAYOUT----------*/
+
+//-----HOME-----
+
+.main_home {
+  article {
+    padding: 4em 0;
+    @media (min-width: 34.375em) {
+      padding: 6em 0;
+    }
+  }
+}
+
+.home_bio {
+  p {
+    width: 80%;
+    margin: 1em auto;
+    font-size: 1.5em;
+  }
+}
+
+.home_projects_image {
+  width: 90%;
+  display: block;
+  margin: 2em auto 0 auto;
+  @media (min-width: 34.375em) {
+    width: 44%;
+    display: inline-block;
+    margin: 4em 1% 0 1%;
+  }
+  &:last-child {
+    margin-bottom: 4em;
+  }
+  figure {
+    position: relative;
+    overflow: hidden;
+  }
+  figcaption {
+    padding-top: 29%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 100;
+  }
+}
+
+.home_skills {
+  p {
+    margin: 2em 0;
+  }
+}
+
+.home_contact {
+  a {
+    display: block;
+    width: 80%;
+    margin: 1em auto;
+    @media (min-width: 50em) {
+      display: inline-block;
+      width: 8em;
+      margin: 2em 2em 0 2em;
+    }
+  }
+}
+
+.home_contact_links {
+  margin: 2em 0;
+}
+
+.icon-newspaper, .icon-paint-format, .icon-keyboard {
+  margin: .6em 0 .2em 0;
+  @media (min-width: 34.375em) {
+    margin-bottom: .6em;
+  }
+}
+
+//-----PROJECTS-----
+
+.projects_title {
+  margin: 2em 0;
+}
+
+.projects_main {
+  .image_left, .image_right {
+    float: left;
+    box-sizing: border-box;
+    margin: 0 4% 1em 4%;
+    @media (min-width: 34.375em) {
+      margin: 0 4%;
+    }
+  }
+  .projects_article {
+    padding: 2em 0;
+    @media (min-width: 34.375em) {
+      padding: 4em 0;
+    }
+    h1 {
+      margin: .5em 0;
+      @media (min-width: 34.375em) {
+        margin: 0 0 .3em 0;
+      }
+    }
+    h2 {
+      margin-bottom: .7em;
+    }
+    p {
+      margin-bottom: 2em;
+    }
+    a {
+      padding: .4em 1em;
+    }
+    .projects_link {
+      display: inline-block;
+    }
+  }
+
+  .projects_text {
+    margin: 0 4%;
+  }
+
+  @media (min-width: 34.375em) {
+    .image_left, .image_right {
+      width: 40%;
+    }
+    .image_left {
+      float: left;
+    }
+    .image_right {
+      float: right;
+    }
+  }
+}
+
+//-----THOUGHTS-----
+
+.thoughts_main {
+  article {
+    margin: 2em 0;
+    padding-top: 2em;
+    h1 {
+      margin-bottom: .1em;
+    }
+    p {
+      margin: 1em 0;
+    }
+  }
+  .first {
+    padding-top: 0;
+  }
+}
+
+//-----CONTACT-----
+
+.contact_main {
+  img {
+    width: 4em;
+  }
+  li {
+    display: inline-block;
+  }
+}
