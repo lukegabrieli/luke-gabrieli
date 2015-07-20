@@ -1,0 +1,22 @@
+/*----------FOOTER----------*/
+
+footer {
+  font-family: "Montserrat Light", sans-serif;
+  background-color: #091d23;
+  padding: 3em 2em;
+  text-align: center;
+  @media (min-width: 34.375em) {
+    padding: 3em 2em 4em 2em;
+  }
+  p {
+    color: white;
+  }
+  @media (min-width: 34.375em) {
+    .copyright {
+      float: left;
+    }
+    .designedby {
+      float: right;
+    }
+  }
+}

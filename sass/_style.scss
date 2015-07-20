@@ -1,0 +1,108 @@
+/*----------STYLE----------*/
+
+$quicksand: 'Quicksand', sans-serif;
+$light-blue: #309CBC;
+
+//-----HOME-----
+
+main {
+  // text-align: center;
+  h1 {
+    font-size: 2em;
+  }
+}
+
+.main_home {
+  text-align: center;
+  article {
+    &:nth-child(even){
+      background-color: rgba(11,135,147,.1);
+    }
+  }
+}
+
+.home_contact, .home_projects {
+  a {
+    text-decoration: none;
+    color: black;
+    padding: 1em;
+    border: .3em solid black;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    overflow: hidden;
+    -webkit-transition: color .3s;
+    transition: color .3s;
+    &:before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      left: 50%;
+      right: 50%;
+      bottom: 0;
+      background: #2098d1;
+      height: 100%;
+      -webkit-transition-property: left, right;
+      transition-property: left, right;
+      -webkit-transition-duration: .3s;
+      transition-duration: .3s;
+      -webkit-transition-timing-function: ease-out;
+      transition-timing-function: ease-out;
+    }
+    &:hover {
+      color: white;
+    }
+  }
+  a:hover:before, a:focus:before, a:active:before {
+    left: 0;
+    right: 0;
+  }
+}
+
+//-----PROJECTS-----
+
+.projects_main {
+  h1 {
+    text-align: center;
+  }
+  .projects_article {
+    &:nth-child(odd) {
+      background-color: rgba(11,135,147,.1);
+    }
+    h1 {
+      font-size: 1.8em;
+    }
+    h2 {
+      font-size: 1.1em;
+    }
+    @include black-button;
+  }
+}
+
+//-----THOUGHTS-----
+
+.thoughts_main {
+  article {
+    border-top: .2em solid $light-blue;
+    h1 {
+      font-family: $quicksand;
+      font-size: 1.8em;
+    }
+    p {
+      font-size: 1.1em;
+      line-height: 1.4;
+    }
+  }
+  .first {
+    border-top: none;
+  }
+  .blog_time {
+    font-size: .9em;
+  }
+}
