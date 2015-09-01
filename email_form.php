@@ -14,5 +14,5 @@ $headers = 'From: Luke Gabrieli Website';
 
 }
 mail ($to, $contactpagesubject, $contactpagemessage, $headers);
-header('location: redirectcontactform.php');
+header('location: index.html');
 ?>
