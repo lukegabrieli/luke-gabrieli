@@ -545,7 +545,7 @@ footer {
     float: right; } }
 
 .thoughts_main article {
-  margin: 2em 0;
+  margin: 2em 2em;
   padding-top: 2em; }
   .thoughts_main article h1 {
     margin-bottom: .1em; }
@@ -555,11 +555,66 @@ footer {
 .thoughts_main .first {
   padding-top: 0; }
 
-.contact_main img {
-  width: 4em; }
+.contact_main {
+  width: 100%;
+  margin: 0 auto; }
 
-.contact_main li {
-  display: inline-block; }
+.about {
+  padding: 0 2em;
+  margin: 4em 0; }
+  .about img {
+    margin-bottom: 2em; }
+  .about p {
+    margin-bottom: .8em; }
+  @media (min-width: 34.375em) {
+    .about {
+      padding: 0 5em; }
+      .about img {
+        margin-bottom: 0; } }
+
+.skills {
+  padding: 3em 0;
+  margin: 4em 0; }
+  .skills .skills_graph {
+    width: 85%;
+    margin: 0 auto; }
+
+#graph {
+  width: 100%;
+  height: 350px; }
+
+.contact {
+  margin: 4em 0; }
+  .contact p {
+    text-align: center;
+    margin: 2em 0; }
+  .contact form {
+    width: 90%;
+    margin: 0 auto; }
+    @media (min-width: 34.375em) {
+      .contact form {
+        width: 70%; } }
+    .contact form input, .contact form textarea {
+      box-sizing: border-box;
+      padding-left: .8em;
+      margin-bottom: 1em;
+      display: block;
+      width: 100%; }
+    .contact form input {
+      height: 3em; }
+    .contact form textarea {
+      height: 7em;
+      padding-top: .8em; }
+    .contact form #submit {
+      width: 50%;
+      margin: 0 auto; }
+    .contact form #first_name {
+      float: left; }
+    .contact form #last_name {
+      float: right; }
+    .contact form #first_name, .contact form #last_name {
+      display: inline-block;
+      width: 49%; }
 
 /*----------STYLE----------*/
 main h1 {
@@ -748,6 +803,29 @@ main h1 {
 
 .thoughts_main .blog_time {
   font-size: .9em; }
+
+.skills {
+  background-color: rgba(11, 135, 147, 0.1); }
+  .skills h2 {
+    text-align: center;
+    font-size: 2em; }
+
+.contact h2 {
+  text-align: center;
+  font-size: 2em; }
+
+.contact input, .contact textarea {
+  font-family: 'Montserrat', sans-serif;
+  border: 1px solid grey;
+  border-radius: .6em; }
+
+.contact #submit {
+  text-transform: uppercase;
+  font-size: 1em;
+  color: white;
+  background-color: #309CBC;
+  border: none;
+  border-radius: 0; }
 
 /*----------CLEARFIX----------*/
 .clearfix:after {
