@@ -179,7 +179,7 @@
   padding: 3em 0;
   margin: 4em 0;
   .skills_graph {
-    width: 85%;
+    width: 90%;
     margin: 0 auto;
   }
 }
@@ -193,14 +193,14 @@
   margin: 4em 0;
   p {
     text-align: center;
-    margin: 2em 0;
+    margin: 2em 1em;
   }
   form {
     width: 90%;
+    margin: 0 auto;
     @media (min-width: 34.375em) {
       width: 70%;
     }
-    margin: 0 auto;
     input, textarea {
       box-sizing: border-box;
       padding-left: .8em;
@@ -209,18 +209,15 @@
       width: 100%;
     }
     input {
-      height: 3em;
+      height: 4em;
     }
     textarea {
-      height: 7em;
+      height: 10em;
       padding-top: .8em;
     }
     #submit {
       width: 50%;
       margin: 0 auto;
-    }
-    #first_name {
-      float: left;
     }
     #last_name {
       float: right;

@@ -576,7 +576,7 @@ footer {
   padding: 3em 0;
   margin: 4em 0; }
   .skills .skills_graph {
-    width: 85%;
+    width: 90%;
     margin: 0 auto; }
 
 #graph {
@@ -587,7 +587,7 @@ footer {
   margin: 4em 0; }
   .contact p {
     text-align: center;
-    margin: 2em 0; }
+    margin: 2em 1em; }
   .contact form {
     width: 90%;
     margin: 0 auto; }
@@ -601,15 +601,13 @@ footer {
       display: block;
       width: 100%; }
     .contact form input {
-      height: 3em; }
+      height: 4em; }
     .contact form textarea {
-      height: 7em;
+      height: 10em;
       padding-top: .8em; }
     .contact form #submit {
       width: 50%;
       margin: 0 auto; }
-    .contact form #first_name {
-      float: left; }
     .contact form #last_name {
       float: right; }
     .contact form #first_name, .contact form #last_name {
