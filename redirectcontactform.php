@@ -1,6 +1,8 @@
-<!doctype html>
-<html class="no-js" lang="eng">
-  <head>
+<?php
+
+?>
+
+<head>
     <meta charset="utf-8">
     <title>Luke Gabrieli</title>
     <meta name="description" content="">
@@ -35,7 +37,7 @@
           <a href="index.html"><li>Home</li></a>
           <a href="projects.html"><li>Portfolio</li></a>
           <a href="thoughts.html"><li>Thoughts</li></a>
-          <a href="contact.html"><li>Contact</li></a>
+          <!-- <a href="contact.html"><li>Contact</li></a> -->
         </ul>
         <section class="socials">
           <a href="https://www.facebook.com/lukegabrieli" target="_blank" class="icon-facebook"></a>
@@ -128,4 +130,7 @@
     <script src="js/menu.js" type="text/javascript"></script>
 
   </body>
-</html>
+
+<?php
+
+?>

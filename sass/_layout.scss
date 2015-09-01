@@ -137,7 +137,7 @@
 
 .thoughts_main {
   article {
-    margin: 2em 0;
+    margin: 2em 2em;
     padding-top: 2em;
     h1 {
       margin-bottom: .1em;
@@ -151,13 +151,83 @@
   }
 }
 
-//-----CONTACT-----
+//-----ABOUT-----
 
 .contact_main {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.about {
+  padding: 0 2em;
+  margin: 4em 0;
   img {
-    width: 4em;
+    margin-bottom: 2em;
   }
-  li {
-    display: inline-block;
+  p {
+    margin-bottom: .8em;
+  }
+  @media (min-width: 34.375em) {
+    padding: 0 5em;
+    img {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.skills {
+  padding: 3em 0;
+  margin: 4em 0;
+  .skills_graph {
+    width: 85%;
+    margin: 0 auto;
+  }
+}
+
+#graph {
+  width: 100%;
+  height: 350px;
+}
+
+.contact {
+  margin: 4em 0;
+  p {
+    text-align: center;
+    margin: 2em 0;
+  }
+  form {
+    width: 90%;
+    @media (min-width: 34.375em) {
+      width: 70%;
+    }
+    margin: 0 auto;
+    input, textarea {
+      box-sizing: border-box;
+      padding-left: .8em;
+      margin-bottom: 1em;
+      display: block;
+      width: 100%;
+    }
+    input {
+      height: 3em;
+    }
+    textarea {
+      height: 7em;
+      padding-top: .8em;
+    }
+    #submit {
+      width: 50%;
+      margin: 0 auto;
+    }
+    #first_name {
+      float: left;
+    }
+    #last_name {
+      float: right;
+    }
+    #first_name, #last_name {
+      display: inline-block;
+      width: 49%;
+    }
   }
 }

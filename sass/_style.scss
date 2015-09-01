@@ -151,3 +151,34 @@ main {
     font-size: .9em;
   }
 }
+
+//-----ABOUT-----
+
+.skills {
+  background-color: rgba(11,135,147,.1);
+  h2 {
+    text-align: center;
+    font-size: 2em;
+  }
+}
+
+.contact {
+  h2 {
+    text-align: center;
+    font-size: 2em;
+  }
+  input, textarea {
+    font-family: 'Montserrat', sans-serif;
+    border: 1px solid grey;
+    border-radius: .6em;
+  }
+  #submit {
+    text-transform: uppercase;
+    font-size: 1em;
+    color: white;
+    background-color: $light-blue;
+    border: none;
+    border-radius: 0;
+
+  }
+}
