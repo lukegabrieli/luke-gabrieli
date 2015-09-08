@@ -201,7 +201,7 @@
     @media (min-width: 34.375em) {
       width: 70%;
     }
-    input, textarea {
+    input, textarea, #submit {
       box-sizing: border-box;
       padding-left: .8em;
       margin-bottom: 1em;
@@ -215,9 +215,14 @@
       height: 10em;
       padding-top: .8em;
     }
-    #submit {
+    #submit, .form_success {
+      height: 3em;
       width: 50%;
       margin: 0 auto;
+    }
+    .form_success{
+      box-sizing: border-box;
+      padding: 1em;
     }
     #last_name {
       float: right;
